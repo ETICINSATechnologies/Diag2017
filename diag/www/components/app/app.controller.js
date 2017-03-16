@@ -5,9 +5,9 @@
         .module('diag')
         .controller('appController', appController);
 
-    appController.$inject = ['$scope', '$ionicModal', '$ionicPopover', '$timeout'];
+    appController.$inject = ['$scope', '$state', '$ionicModal', '$ionicPopover', '$timeout'];
 
-    function appController($scope, $ionicModal, $ionicPopover, $timeout) {
+    function appController($scope, $state, $ionicModal, $ionicPopover, $timeout) {
         // Form data for the login modal
         $scope.loginData = {};
 
@@ -38,6 +38,13 @@
         $scope.$on('$destroy', function () {
             $scope.popover.remove();
         });
+
+        $scope.backToHome = function () {
+            for (var i = 0; i < navIcons.length; i++) {
+                navIcons[i].click();
+            }
+            $state.go('app.home');
+        };
     }
 })();
 
