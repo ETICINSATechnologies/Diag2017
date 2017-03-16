@@ -224,3 +224,24 @@ p {
     background-color: #2c3e50 !important;
     color: #FFFFFF;
 }
+
+.center {
+    margin: auto auto auto auto;
+    display: block;
+}
+
+.home-title {
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-container {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.home-container > .row {
+    -webkit-flex: 1;
+}
