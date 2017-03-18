@@ -314,5 +314,27 @@ ion-content > div {
 }
 
 .landscape.home-high .home-logo {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  height: 80%;
+  width: auto;
+}
 
+.landscape.home-title {
+  font-size: 4vw !important;
+}
+
+.landscape.home-button {
+  height: 10vw;
+}
+
+.landscape.home-button > .col {
+  height: 80%;
+}
+
+.landscape.home-button > .col > button {
+  height: 90%;
+  width: 90%;
+  font-size: 2vw;
+  left: 5%;
 }
