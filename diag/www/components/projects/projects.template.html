@@ -1,14 +1,17 @@
 <ion-view title="ETIC INSA Technologies - Nos études">
   <ion-content class="etic-dark-bg">
     <div class="row">
-      <h2 class="project-title">Découvrez nos plus beaux projets</h2>
+      <h2 class="project-title" ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
+        Découvrez nos plus beaux projets</h2>
     </div>
     <div class="row project-row" ng-repeat="project in ProjectService.projects">
-      <div class="col col-40 col-offset-8 project-container">
+      <div class="col project-container"
+           ng-class="{'col-40 col-offset-8':WindowService.portrait(), 'col-33 col-offset-12': WindowService.landscape()}">
         <img src="img/material3.jpg" class="project-img"/>
         <div class="project-overlay"><span>{{project[0].name}}</span></div>
       </div>
-      <div ng-if="project[1]" class="col col-40 col-offset-4 project-container">
+      <div ng-if="project[1]" class="col project-container"
+           ng-class="{'col-40 col-offset-4':WindowService.portrait(), 'col-33 col-offset-10': WindowService.landscape()}">
         <img src="img/material3.jpg" class="project-img"/>
         <div class="project-overlay"><span>{{project[1].name}}</span></div>
       </div>

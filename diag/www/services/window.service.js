@@ -38,6 +38,10 @@
       return windowFactory.height > windowFactory.width;
     };
 
+    windowFactory.landscape = function () {
+      return windowFactory.height <= windowFactory.width;
+    };
+
     return windowFactory;
   }
 })();

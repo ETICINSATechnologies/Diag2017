@@ -241,6 +241,24 @@ ion-content > div {
   margin-left: 8%;
 }
 
+.col-offset-12 {
+  margin-left: 12%;
+}
+
+.col-offset-15 {
+  margin-left: 15%;
+}
+
+.col-30 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
 .col-40 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 40%;
@@ -357,7 +375,7 @@ ion-content > div {
   left: 5%;
 }
 
-/** PROJECTS PORTRAIT **/
+/** PROJECTS **/
 
 .project-img {
   width: 100%;
@@ -372,10 +390,6 @@ ion-content > div {
 
 .project-row {
   margin-bottom: 2%;
-}
-
-.project-container {
-
 }
 
 .project-container .project-overlay {
@@ -395,4 +409,11 @@ ion-content > div {
   position: relative;
   top: 30%;
   left: 5%;
+}
+
+/** PROJECTS LANDSCAPE **/
+
+.landscape.project-title {
+  font-size: 3vw;
+  margin: 2% auto 5% auto !important;
 }
