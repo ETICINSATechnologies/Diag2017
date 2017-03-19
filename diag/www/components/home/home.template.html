@@ -1,12 +1,12 @@
 <ion-view title="ETIC INSA Technologies">
   <ion-content class="etic-dark-bg">
     <section class="home-container">
-      <div class="row home-high" ng-class="{portrait: windowHeight > windowWidth, landscape: windowHeight <= windowWidth}">
+      <div class="row home-high" ng-class="{portrait: WindowService.portrait(), landscape: !WindowService.portrait()}">
           <img src="img/logo-etic-big.png" class="home-logo" width="100%"/>
       </div>
       <div class="row home-low"
-           ng-class="{portrait: windowHeight > windowWidth, landscape: windowHeight <= windowWidth}">
-        <div class="col col-80 col-offset-10" ng-if="windowHeight > windowWidth">
+           ng-class="{portrait: WindowService.portrait(), landscape: !WindowService.portrait()}">
+        <div class="col col-80 col-offset-10" ng-if="WindowService.portrait()">
           <div class="row">
             <h2 class="home-title portrait">Diagnostic prix d'excellence 2017</h2>
           </div>
@@ -26,8 +26,8 @@
             </button>
           </div>
         </div>
-        <div class="col col-90 col-offset-5" ng-if="windowHeight <= windowWidth">
-          <div class="row home-low" ng-class="{portrait: windowHeight > windowWidth, landscape: windowHeight <= windowWidth}">
+        <div class="col col-90 col-offset-5" ng-if="!WindowService.portrait()">
+          <div class="row home-low" ng-class="{portrait: WindowService.portrait(), landscape: !WindowService.portrait()}">
             <h2 class="home-title landscape">Diagnostic prix d'excellence 2017</h2>
           </div>
           <div class="row home-button landscape">

@@ -1,34 +1,13 @@
 ﻿(function () {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('diag')
-        .controller('homeController', homeController);
+  angular
+    .module('diag')
+    .controller('homeController', homeController);
 
-    homeController.$inject = ['$scope'];
+  homeController.$inject = ['$scope', 'WindowService'];
 
-    function homeController($scope) {
-      var w = angular.element(window);
-      $scope.$watch(
-        function () {
-          return window.innerWidth;
-        },
-        function (value) {
-          $scope.windowWidth = value;
-        },
-        true
-      );
-      $scope.$watch(
-        function () {
-          return window.innerHeight;
-        },
-        function (value) {
-          $scope.windowHeight = value;
-        },
-        true
-      );
-      w.bind('resize', function(){
-        $scope.$apply();
-      });
-    }
+  function homeController($scope, WindowService) {
+    $scope.WindowService = WindowService;
+  }
 })();

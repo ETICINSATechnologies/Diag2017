@@ -5,33 +5,11 @@
     .module('diag')
     .controller('projectsController', projectsController);
 
-  projectsController.$inject = ['$scope', 'ProjectService'];
+  projectsController.$inject = ['$scope', 'ProjectService', 'WindowService'];
 
-  function projectsController($scope, ProjectService) {
+  function projectsController($scope, ProjectService, WindowService) {
     $scope.ProjectService = ProjectService;
-
-    var w = angular.element(window);
-    $scope.$watch(
-      function () {
-        return window.innerWidth;
-      },
-      function (value) {
-        $scope.windowWidth = value;
-      },
-      true
-    );
-    $scope.$watch(
-      function () {
-        return window.innerHeight;
-      },
-      function (value) {
-        $scope.windowHeight = value;
-      },
-      true
-    );
-    w.bind('resize', function () {
-      $scope.$apply();
-    });
+    $scope.WindowService = WindowService;
 
     ProjectService.getAllProjects();
   }
