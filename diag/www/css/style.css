@@ -229,8 +229,26 @@ ion-content > div {
   height: 100% !important;
 }
 
+.col-offset-4 {
+  margin-left: 4%;
+}
+
 .col-offset-5 {
   margin-left: 5%;
+}
+
+.col-offset-8 {
+  margin-left: 8%;
+}
+
+.col-40 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40%;
 }
 
 /** HOME **/
@@ -337,4 +355,21 @@ ion-content > div {
   width: 90%;
   font-size: 2vw;
   left: 5%;
+}
+
+/** PROJECTS PORTRAIT **/
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  color: #FFFFFF;
+  font-size: 5vw;
+  margin: 5% auto 5% auto !important;
+}
+
+.project-row {
+  margin-bottom: 2%;
 }

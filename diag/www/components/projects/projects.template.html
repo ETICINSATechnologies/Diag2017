@@ -1,5 +1,15 @@
 <ion-view title="ETIC INSA Technologies - Nos études">
-    <ion-content class="etic-dark-bg">
-
-    </ion-content>
+  <ion-content class="etic-dark-bg">
+    <div class="row">
+      <h2 class="project-title">Découvrez nos plus beaux projets</h2>
+    </div>
+    <div class="row project-row" ng-repeat="project in ProjectService.projects">
+      <div class="col col-40 col-offset-8">
+        <img src="img/material3.jpg" class="project-img"/>
+      </div>
+      <div ng-if="project[1]" class="col col-40 col-offset-4">
+        <img src="img/material3.jpg" class="project-img"/>
+      </div>
+    </div>
+  </ion-content>
 </ion-view>
