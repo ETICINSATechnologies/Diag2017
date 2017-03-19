@@ -373,3 +373,26 @@ ion-content > div {
 .project-row {
   margin-bottom: 2%;
 }
+
+.project-container {
+
+}
+
+.project-container .project-overlay {
+  position: relative;
+  top: -30%;
+  left: 20%;
+  width:80%;
+  height: 20%;
+  display: block;
+  font-size: 3vw;
+  color: #FFFFFF;
+  background-color: #27ae60;
+}
+
+.project-container .project-overlay span {
+  display: block;
+  position: relative;
+  top: 30%;
+  left: 5%;
+}
