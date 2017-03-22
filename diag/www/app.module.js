@@ -4,7 +4,8 @@
     angular
         .module('diag', [
             'ionic',
-            'ionic-material'
+            'ionic-material',
+            'ui.router'
         ])
         .run(run)
         .config(config);
