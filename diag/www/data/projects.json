@@ -1,32 +1,122 @@
 [
   {
-    "name":"Etude 1"
+    "name": "Etude 1",
+    "price": "10 000",
+    "jehAmount": "26",
+    "consultantsAmount": "2",
+    "duration": "15",
+    "context": [
+      "Le client souhaite créer sa start-up",
+      "Expert reconnu dans le domaine du chapeau"
+    ],
+    "objectives": [
+      "Plateforme de vente de chapeaux",
+      "Site web et application mobile",
+      "Statistiques de vente",
+      "Back office"
+    ],
+    "tasks": [
+      {
+        "name": "Analyse",
+        "content": [
+          "Analyse du cahier des charges",
+          "Conception d'une architecture technique"
+        ],
+        "jehAmount": "3",
+        "duration": "1"
+      },
+      {
+        "name": "Réalisation",
+        "content": [
+          "Développement du back-end",
+          "Développement du front-end (site)",
+          "Développement du front-end (application)"
+        ],
+        "jehAmount": "18",
+        "duration": "11"
+      },
+      {
+        "name": "Tests",
+        "content": [
+          "Tests unitaires",
+          "Tests d'intégration"
+        ],
+        "jehAmount": "3",
+        "duration": "1"
+      },
+      {
+        "name": "Mise en production",
+        "content": [
+          "Déploiement sur le serveur",
+          "Déploiement de l'application sur le store",
+          "Configuration"
+        ],
+        "jehAmount": "1",
+        "duration": "1"
+      },
+      {
+        "name": "Recette",
+        "content": [
+          "Prise en compte des retours client",
+          "Corrections associées"
+        ],
+        "jehAmount": "1",
+        "duration": "1"
+      }
+    ],
+    "consultants": [
+      {
+        "name": "Jean-Michel Consultant",
+        "feedback": "Cette étude m'a permis d'apprendre à utiliser des technologies qu'on ne m'enseigne pas en cours, et de découvrir la réalité d'un projet professionnel.",
+        "story": [
+        ]
+      }
+    ],
+    "managers": [
+      {
+        "name": "Jean-Michel Chadaff",
+        "feedback": "Cette étude m'a permis d'améliorer mes compétences de management en me plaçant face à des problèmes concrets pour un véritable client.",
+        "story": [
+          "Entrée au département Génie Industriel en septembre 2016",
+          "Arrivée en tant que Chargé d'Affaires en septembre 2016",
+          "Nommé Responsable Business Unit en février 2017"
+        ]
+      }
+    ],
+    "clients": [
+      {
+        "name": "Jean-Michel Client",
+        "feedback": "Durant tout ce projet, ETIC et le chargé d'affaires se sont montrés très rigoureux et très professionnels. L'étude s'est bien déroulée, et je suis satisfait du résultat.",
+        "story": [
+        ]
+      }
+    ]
   },
   {
-    "name":"Etude 2"
+    "name": "Etude 2"
   },
   {
-    "name":"Etude 3"
+    "name": "Etude 3"
   },
   {
-    "name":"Etude 4"
+    "name": "Etude 4"
   },
   {
-    "name":"Etude 5"
+    "name": "Etude 5"
   },
   {
-    "name":"Etude 6"
+    "name": "Etude 6"
   },
   {
-    "name":"Etude 7"
+    "name": "Etude 7"
   },
   {
-    "name":"Etude 8"
+    "name": "Etude 8"
   },
   {
-    "name":"Etude 9"
+    "name": "Etude 9"
   },
   {
-    "name":"Etude 10"
+    "name": "Etude 10"
   }
 ]

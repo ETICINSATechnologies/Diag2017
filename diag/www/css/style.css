@@ -1,6 +1,13 @@
 /* Empty. Add your own CSS if you like */
 /* Utilities */
 
+@font-face {
+  font-family: "caviarDreams";
+  src: url('./CaviarDreams.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .link {
   color: #116262;
   font-weight: bold;
@@ -216,8 +223,8 @@ p {
 }
 
 .etic-green {
-  background-color: #27ae60;
-  color: #FFFFFF;
+  background-color: #27ae60 !important;
+  color: #FFFFFF !important;
 }
 
 .etic-dark-bg {
@@ -269,12 +276,33 @@ ion-content > div {
   max-width: 40%;
 }
 
+.col-60 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 60%;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.col-70 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 70%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 70%;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
 /** HOME **/
 
 .home-title {
   color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
+  font-family: caviarDreams, Arial;
 }
 
 .home-container {
@@ -332,11 +360,12 @@ ion-content > div {
 .portrait.home-button > button {
   height: 80% !important;
   font-size: 4vw;
+  font-family: caviarDreams, Arial;
 }
 
 .portrait.home-title {
   margin-bottom: 10%;
-  font-size: 5vw;
+  font-size: 4.9vw;
 }
 
 /** HOME LANDSCAPE **/
@@ -373,6 +402,7 @@ ion-content > div {
   width: 90%;
   font-size: 2vw;
   left: 5%;
+  font-family: caviarDreams, Arial;
 }
 
 /** PROJECTS **/
@@ -386,6 +416,7 @@ ion-content > div {
   color: #FFFFFF;
   font-size: 5vw;
   margin: 5% auto 5% auto !important;
+  font-family: caviarDreams, Arial;
 }
 
 .project-row {
@@ -396,12 +427,14 @@ ion-content > div {
   position: relative;
   top: -30%;
   left: 20%;
-  width:80%;
+  width: 80%;
   height: 20%;
   display: block;
   font-size: 3vw;
   color: #FFFFFF;
   background-color: #27ae60;
+  opacity: 0.9;
+  font-family: caviarDreams, Arial;
 }
 
 .project-container .project-overlay span {
@@ -416,4 +449,99 @@ ion-content > div {
 .landscape.project-title {
   font-size: 3vw;
   margin: 2% auto 5% auto !important;
+}
+
+/** PROJECT VIEW **/
+.project-view-title {
+  color: #FFFFFF;
+  font-size: 5vw;
+}
+
+.project-view-sub-title {
+  color: #FFFFFF;
+  font-size: 3vw;
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.project-view-section-title {
+  color: #FFFFFF;
+  font-size: 4vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.project-view-list-item {
+  color: #FFFFFF;
+  font-size: 2.5vw;
+  line-height: 2.8vw;
+  margin: 0.5em 1em 0.5em 1em;
+}
+
+.project-view-list-item > span {
+  color: #FFFFFF;
+  font-size: 2.5vw;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.project-view-img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-view-header {
+  margin: 5% auto 5% auto;
+}
+
+.project-view-icon {
+  color: #FFFFFF;
+  display: inline;
+  font-size: 3vw;
+}
+
+.project-view-task-button {
+  width: 100%;
+  margin: 5% auto 5% auto;
+}
+
+.project-view-task-footer {
+
+}
+
+.project-view-bubble {
+  border-radius: 5px 5px;
+  background-color: #FFFFFF;
+  color: #000000;
+  display: block;
+  width: 100%;
+  font-size: 2vw;
+  line-height: 2.4vw;
+  padding: 5% 5% 5% 5%;
+}
+
+.project-view-bubble.left {
+
+}
+
+.project-view-bubble.right {
+
+}
+
+.project-view-footer {
+  height: 10%;
+}
+
+/** PROJECT VIEW PORTRAIT **/
+.project-view-task-button.portrait {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.portrait.project-number {
+  padding: 0 !important;
+}
+
+.portrait.project-view-task-button {
+  padding: 5% 2% 5% 2% !important;
+  height: 10% !important;
 }
