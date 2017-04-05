@@ -58,6 +58,14 @@ p {
 
 /* Menu */
 
+.menu-item {
+  font-family: caviarDreams, Arial;
+}
+
+.menu-sub-item {
+  font-style: italic;
+}
+
 .menu .bar.bar-header.expanded {
   background-image: url('../img/material-graphite.jpg');
   background-size: 120%;
