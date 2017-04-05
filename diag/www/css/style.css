@@ -445,6 +445,10 @@ ion-content > div {
   font-family: caviarDreams, Arial;
 }
 
+.landscape.project-overlay {
+  font-size: 2.6vw !important;
+}
+
 .project-container .project-overlay span {
   display: block;
   position: relative;
