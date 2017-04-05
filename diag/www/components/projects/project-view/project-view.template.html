@@ -1,6 +1,6 @@
 <ion-view title="ETIC INSA Technologies">
   <ion-content class="etic-dark-bg">
-    <div class="row project-view-header">
+    <div class="row project-view-header  project-view-faded">
       <div class="col col-offset-5 col-30">
         <img src="img/material3.jpg" class="project-view-img">
       </div>
@@ -108,7 +108,7 @@
               Phase {{$index + 1}}
             </button>
           </div>
-          <div class="col col-70 col-offset-5">
+          <div class="col col-70 col-offset-5 project-view-task-details">
             <h4 class="project-view-sub-title">
               Phase {{currentTask + 1}} : {{project.tasks[currentTask].name}}
             </h4>
@@ -133,42 +133,6 @@
             </div>
           </div>
         </div>
-        <!-- PORTRAIT -->
-        <!--<div class="row" ng-if="WindowService.portrait()">
-          <button
-            ng-repeat="task in project.tasks track by $index"
-            class="button button-small project-view-task-button portrait project-view-task-button"
-            ng-class="{'etic-green':$index == currentTask, 'button-stable': $index != currentTask}"
-            ng-click="setCurrentTask($index);">
-            Phase {{$index + 1}}
-          </button>
-        </div>
-        <div class="row" ng-if="WindowService.portrait()">
-          <div class="col col-90 col-offset-5">
-            <h4 class="project-view-sub-title">
-              Phase {{currentTask + 1}} : {{project.tasks[currentTask].name}}
-            </h4>
-            <ul>
-              <li class="project-view-list-item" ng-repeat="item in project.tasks[currentTask].content">
-                <span class="ion-android-arrow-dropright"></span>
-                {{item}}
-              </li>
-            </ul>
-            <div class="project-view-task-footer">
-              <div class="row">
-                <div class="col col-50">
-                  <span class="ion-android-time project-view-icon"></span>
-                  <h4 class="project-view-sub-title">{{project.tasks[currentTask].jehAmount}} JEH</h4>
-                </div>
-                <div class="col col-50">
-                  <span class="ion-android-calendar project-view-icon"></span>
-                  <h4 class="project-view-sub-title">{{project.tasks[currentTask].duration}}
-                    Semaine{{project.tasks[currentTask].duration > 1 ? 's' : ''}}</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>-->
       </div>
     </div>
     <!-- LANDSCAPE -->
@@ -178,7 +142,7 @@
           <h3 class="project-view-section-title">Témoignages</h3>
         </div>
         <div class="row" ng-repeat-start="manager in project.managers">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{manager.name}}, Chargé d'Affaires
           </h4>
         </div>
@@ -188,7 +152,7 @@
           </div>
         </div>
         <div class="row" ng-repeat-start="client in project.clients">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{client.name}}, Client
           </h4>
         </div>
@@ -198,7 +162,7 @@
           </div>
         </div>
         <div class="row" ng-repeat-start="consultant in project.consultants">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{consultant.name}}, Consultant
           </h4>
         </div>
@@ -213,7 +177,7 @@
           <h3 class="project-view-section-title">Parcours</h3>
         </div>
         <div class="row" ng-repeat-start="manager in project.managers">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{manager.name}}, Chargé d'affaires
           </h4>
         </div>
@@ -226,7 +190,7 @@
           </ul>
         </div>
         <div class="row" ng-repeat-start="client in project.clients">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{client.name}}, Client
           </h4>
         </div>
@@ -239,7 +203,7 @@
           </ul>
         </div>
         <div class="row" ng-repeat-start="consultant in project.consultants">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{consultant.name}}, Consultant
           </h4>
         </div>
@@ -271,7 +235,7 @@
           </div>
         </div>
         <div class="row" ng-repeat-start="client in project.clients">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{client.name}}, Client
           </h4>
         </div>
@@ -281,7 +245,7 @@
           </div>
         </div>
         <div class="row" ng-repeat-start="consultant in project.consultants">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{consultant.name}}, Consultant
           </h4>
         </div>
@@ -298,7 +262,7 @@
           <h3 class="project-view-section-title">Parcours</h3>
         </div>
         <div class="row" ng-repeat-start="manager in project.managers">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{manager.name}}, Chargé d'affaires
           </h4>
         </div>
@@ -311,7 +275,7 @@
           </ul>
         </div>
         <div class="row" ng-repeat-start="client in project.clients">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{client.name}}, Client
           </h4>
         </div>
@@ -324,7 +288,7 @@
           </ul>
         </div>
         <div class="row" ng-repeat-start="consultant in project.consultants">
-          <h4 class="project-view-list-item">
+          <h4 class="project-view-sub-title">
             {{consultant.name}}, Consultant
           </h4>
         </div>

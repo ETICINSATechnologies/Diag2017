@@ -527,6 +527,14 @@ ion-content > div {
 
 }
 
+.project-view-task-details {
+  /*background-color: rgba(230, 230, 230, 0.1) !important;*/
+}
+
+.project-view-faded {
+  background-color: rgba(230, 230, 230, 0.1) !important;
+}
+
 .project-view-bubble {
   border-radius: 5px 5px;
   background-color: #FFFFFF;
