@@ -122,7 +122,8 @@
               <div class="row">
                 <div class="col col-50">
                   <span class="ion-android-time project-view-icon"></span>
-                  <h4 class="project-view-sub-title">{{project.tasks[currentTask].jehAmount}} JEH</h4>
+                  <h4 ng-if="project.tasks[currentTask].jehAmount > 0" class="project-view-sub-title">{{project.tasks[currentTask].jehAmount}} JEH</h4>
+                  <h4 ng-if="project.tasks[currentTask].jehAmount == 0" class="project-view-sub-title">Offerte</h4>
                 </div>
                 <div class="col col-50">
                   <span class="ion-android-calendar project-view-icon"></span>
@@ -135,91 +136,8 @@
         </div>
       </div>
     </div>
-    <!-- LANDSCAPE -->
-    <div class="row" ng-if="WindowService.landscape()">
-      <div class="col col-40 col-offset-5">
-        <div class="row">
-          <h3 class="project-view-section-title">Témoignages</h3>
-        </div>
-        <div class="row" ng-repeat-start="manager in project.managers">
-          <h4 class="project-view-sub-title">
-            {{manager.name}}, Chargé d'Affaires
-          </h4>
-        </div>
-        <div class="row" ng-repeat-end>
-          <div class="project-view-bubble">
-            {{manager.feedback}}
-          </div>
-        </div>
-        <div class="row" ng-repeat-start="client in project.clients">
-          <h4 class="project-view-sub-title">
-            {{client.name}}, Client
-          </h4>
-        </div>
-        <div class="row" ng-repeat-end>
-          <div class="project-view-bubble etic-green">
-            {{client.feedback}}
-          </div>
-        </div>
-        <div class="row" ng-repeat-start="consultant in project.consultants">
-          <h4 class="project-view-sub-title">
-            {{consultant.name}}, Consultant
-          </h4>
-        </div>
-        <div class="row" ng-repeat-end>
-          <div class="project-view-bubble">
-            {{consultant.feedback}}
-          </div>
-        </div>
-      </div>
-      <div class="col col-40 col-offset-10">
-        <div class="row">
-          <h3 class="project-view-section-title">Parcours</h3>
-        </div>
-        <div class="row" ng-repeat-start="manager in project.managers">
-          <h4 class="project-view-sub-title">
-            {{manager.name}}, Chargé d'affaires
-          </h4>
-        </div>
-        <div class="row" ng-repeat-end>
-          <ul>
-            <li class="project-view-list-item" ng-repeat="item in manager.story">
-              <span class="ion-android-arrow-dropright"></span>
-              {{item}}
-            </li>
-          </ul>
-        </div>
-        <div class="row" ng-repeat-start="client in project.clients">
-          <h4 class="project-view-sub-title">
-            {{client.name}}, Client
-          </h4>
-        </div>
-        <div class="row" ng-repeat-end>
-          <ul>
-            <li class="project-view-list-item" ng-repeat="item in client.story">
-              <span class="ion-android-arrow-dropright"></span>
-              {{item}}
-            </li>
-          </ul>
-        </div>
-        <div class="row" ng-repeat-start="consultant in project.consultants">
-          <h4 class="project-view-sub-title">
-            {{consultant.name}}, Consultant
-          </h4>
-        </div>
-        <div class="row" ng-repeat-end>
-          <ul>
-            <li class="project-view-list-item" ng-repeat="item in consultant.story">
-              <span class="ion-android-arrow-dropright"></span>
-              {{item}}
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- END LANDSCAPE -->
     <!-- PORTRAIT -->
-    <div class="row" ng-if="WindowService.portrait()">
+    <div class="row">
       <div class="col col-90 col-offset-5">
         <div class="row">
           <h3 class="project-view-section-title">Témoignages</h3>
@@ -259,7 +177,7 @@
         </div>
       </div>
     </div>
-    <div class="row" ng-if="WindowService.portrait()">
+    <div class="row">
       <div class="col col-90 col-offset-5">
         <div class="row">
           <h3 class="project-view-section-title">Parcours</h3>

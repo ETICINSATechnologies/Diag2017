@@ -11,7 +11,7 @@
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
   <ion-side-menu side="left">
-    <ion-header-bar class="expanded" ng-click="backToHome()">
+    <ion-header-bar class="expanded" menu-close ui-sref="app.home">
       <img src="img/logo-etic-big.png" class="avatar home-logo motion spin fade">
       <div class="menu-bottom menu-title">
         Diagnostic PE 2017
@@ -20,23 +20,21 @@
     <ion-content class="stable-bg has-expanded-header">
       <ion-list>
         <ion-item nav-clear menu-close ui-sref="app.presentation">
-          <span class="menu-item" ui-sref="app.projects">Présentation</span>
+          <span class="menu-item">Présentation</span>
         </ion-item>
         <ion-item nav-clear menu-close ui-sref="app.stats">
-          <span class="menu-item" ui-sref="app.projects">Chiffre clés</span>
+          <span class="menu-item">Chiffre clés</span>
         </ion-item>
-        <ion-item nav-clear menu-close>
-          <span class="menu-item" ui-sref="app.projects">Nos études</span>
-          <ion-list>
-            <ion-item ng-repeat-start="project in ProjectService.projects track by $index"
-                      ui-sref="app.project({x: $index, y: 0})"
-                      class="menu-sub-item">
-              {{project[0].name}}
-            </ion-item>
-            <ion-item ng-repeat-end ui-sref="app.project({x: $index, y: 1})" class="menu-sub-item">
-              {{project[1].name}}
-            </ion-item>
-          </ion-list>
+        <ion-item nav-clear menu-close ui-sref="app.projects">
+          <span class="menu-item">Nos études</span>
+        </ion-item>
+        <ion-item nav-clear menu-close ng-repeat-start="project in ProjectService.projects track by $index"
+                  ui-sref="app.project({x: $index, y: 0})"
+                  class="menu-sub-item">
+          {{project[0].name}}
+        </ion-item>
+        <ion-item nav-clear menu-close ng-repeat-end ui-sref="app.project({x: $index, y: 1})" class="menu-sub-item">
+          {{project[1].name}}
         </ion-item>
       </ion-list>
     </ion-content>

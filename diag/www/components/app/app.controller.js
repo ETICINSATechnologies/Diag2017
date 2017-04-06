@@ -1,32 +1,25 @@
 ﻿(function () {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('diag')
-        .controller('appController', appController);
+  angular
+    .module('diag')
+    .controller('appController', appController);
 
-    appController.$inject = ['$scope', '$state', '$ionicModal', '$ionicPopover', '$timeout', 'ProjectService'];
+  appController.$inject = ['$scope', '$state', '$ionicModal', '$ionicPopover', '$timeout', 'ProjectService'];
 
-    function appController($scope, $state, $ionicModal, $ionicPopover, $timeout, ProjectService) {
-        // Form data for the login modal
-        $scope.loginData = {};
-        $scope.ProjectService = ProjectService;
+  function appController($scope, $state, $ionicModal, $ionicPopover, $timeout, ProjectService) {
+    // Form data for the login modal
+    $scope.loginData = {};
+    $scope.ProjectService = ProjectService;
 
-        ProjectService.getAllProjects();
+    ProjectService.getAllProjects();
 
-        var navIcons = document.getElementsByClassName('ion-navicon');
-        for (var i = 0; i < navIcons.length; i++) {
-            navIcons.addEventListener('click', function () {
-                this.classList.toggle('active');
-            });
-        }
-
-        $scope.backToHome = function () {
-            for (var i = 0; i < navIcons.length; i++) {
-                navIcons[i].click();
-            }
-            $state.go('app.home');
-        };
+    var navIcons = document.getElementsByClassName('ion-navicon');
+    for (var i = 0; i < navIcons.length; i++) {
+      navIcons.addEventListener('click', function () {
+        this.classList.toggle('active');
+      });
     }
+  }
 })();
 
