@@ -5,9 +5,9 @@
         .module('diag')
         .controller('statsController', statsController);
 
-    statsController.$inject = [];
+    statsController.$inject = ['$scope', 'WindowService'];
 
-    function statsController() {
-
+    function statsController($scope, WindowService) {
+      $scope.WindowService = WindowService;
     }
 })();
