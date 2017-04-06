@@ -43,6 +43,51 @@
           }
         }
       })
+      .state('app.devco', {
+        url: '/devco',
+        views: {
+          'menuContent': {
+            templateUrl: 'components/devco/devco.template.html',
+            controller: 'devcoController'
+          }
+        }
+      })
+      .state('app.devinterne', {
+        url: '/devinterne',
+        views: {
+          'menuContent': {
+            templateUrl: 'components/devinterne/devinterne.template.html',
+            controller: 'devinterneController'
+          }
+        }
+      })
+      .state('app.rh', {
+        url: '/rh',
+        views: {
+          'menuContent': {
+            templateUrl: 'components/rh/rh.template.html',
+            controller: 'rhController'
+          }
+        }
+      })
+      .state('app.communication', {
+        url: '/communication',
+        views: {
+          'menuContent': {
+            templateUrl: 'components/communication/communication.template.html',
+            controller: 'communicationController'
+          }
+        }
+      })
+      .state('app.tresorerie', {
+        url: '/tresorerie',
+        views: {
+          'menuContent': {
+            templateUrl: 'components/tresorerie/tresorerie.template.html',
+            controller: 'tresorerieController'
+          }
+        }
+      })
       .state('app.projects', {
         url: '/projects',
         views: {

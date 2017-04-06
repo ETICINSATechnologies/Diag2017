@@ -1,50 +1,50 @@
 <ion-view title="ETIC INSA Technologies">
   <ion-content class="etic-dark-bg">
     <section class="home-container">
-      <div class="row home-high" ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
-          <img src="img/logo-etic-big.png" class="home-logo" width="100%"/>
-      </div>
-      <div class="row home-low"
-           ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
-        <div class="col col-80 col-offset-10" ng-if="WindowService.portrait()">
-          <div class="row">
-            <h2 class="home-title portrait">Diagnostic Prix d'Excellence 2017</h2>
-          </div>
-          <div class="row home-button portrait">
-            <button ui-sref="app.presentation" class="button button-block etic-green">
-              Présentation
-            </button>
-          </div>
-          <div class="row home-button portrait">
-            <button ui-sref="app.stats" class="button button-block etic-green">
-              Chiffres clés
-            </button>
-          </div>
-          <div class="row home-button portrait">
-            <button ui-sref="app.projects" class="button button-block etic-green">
-              Nos études
-            </button>
-          </div>
-        </div>
-        <div class="col col-90 col-offset-5" ng-if="!WindowService.portrait()">
-          <div class="row home-low" ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
-            <h2 class="home-title landscape">Diagnostic Prix d'Excellence 2017</h2>
-          </div>
-          <div class="row home-button landscape">
-            <div class="col col-33 col-center">
-              <button ui-sref="app.presentation" class="button button-block etic-green">
-                Présentation
-              </button>
-            </div>
-            <div class="col col-33 col-center">
-              <button ui-sref="app.stats" class="button button-block etic-green">
-                Chiffres clés
-              </button>
-            </div>
-            <div class="col col-33 col-center">
-              <button ui-sref="app.projects" class="button button-block etic-green">
-                Nos études
-              </button>
+              <div class="row home-high" ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
+                <img src="img/logo-etic-big.png" class="home-logo" width="100%"/>
+              </div>
+              <div class="row home-low"
+                   ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
+                <div class="col col-80 col-offset-10" ng-if="WindowService.portrait()">
+                  <div class="row">
+                    <h2 class="home-title portrait">Diagnostic Prix d'Excellence 2017</h2>
+                  </div>
+                  <div class="row home-button portrait">
+                    <button ui-sref="app.presentation" class="button button-block etic-green">
+                      Présentation
+                    </button>
+                  </div>
+                  <div class="row home-button portrait">
+                    <button ui-sref="app.stats" class="button button-block etic-green">
+                      Chiffres clés
+                    </button>
+                  </div>
+                  <div class="row home-button portrait">
+                    <button ui-sref="app.projects" class="button button-block etic-green">
+                      Nos études
+                    </button>
+                  </div>
+                </div>
+                <div class="col col-90 col-offset-5" ng-if="!WindowService.portrait()">
+                  <div class="row home-low" ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
+                    <h2 class="home-title landscape">Diagnostic Prix d'Excellence 2017</h2>
+                  </div>
+                  <div class="row home-button landscape">
+                    <div class="col col-33 col-center">
+                      <button ui-sref="app.presentation" class="button button-block etic-green">
+                        Présentation
+                      </button>
+                    </div>
+                    <div class="col col-33 col-center">
+                      <button ui-sref="app.stats" class="button button-block etic-green">
+                        Chiffres clés
+                      </button>
+                    </div>
+                    <div class="col col-33 col-center">
+                      <button ui-sref="app.projects" class="button button-block etic-green">
+                        Nos études
+                      </button>
             </div>
           </div>
         </div>

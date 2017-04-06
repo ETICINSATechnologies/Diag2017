@@ -1,5 +1,75 @@
 <ion-view title="ETIC INSA Technologies - Chiffres clés">
     <ion-content class="etic-dark-bg">
-
+      <section class="home-container">
+        <div class="row home-low"
+             ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
+          <div class="col col-80 col-offset-10" ng-if="WindowService.portrait()">
+            <div class="row">
+              <h2 class="home-title portrait">Les chiffres clés d'ETIC</h2>
+            </div>
+            <div class="row home-button portrait">
+              <button ui-sref="app.devco" class="button button-block etic-green">
+                Développement commercial
+              </button>
+            </div>
+            <div class="row home-button portrait">
+              <button ui-sref="app.devinterne" class="button button-block etic-green">
+                Développement interne
+              </button>
+            </div>
+            <div class="row home-button portrait">
+              <button ui-sref="app.rh" class="button button-block etic-green">
+                Ressources humaines
+              </button>
+            </div>
+            <div class="row home-button portrait">
+              <button ui-sref="app.communication" class="button button-block etic-green">
+                Communication
+              </button>
+            </div>
+            <div class="row home-button portrait">
+              <button ui-sref="app.tresorerie" class="button button-block etic-green">
+                Trésorerie
+              </button>
+            </div>
+          </div>
+          <div class="col col-90 col-offset-5" ng-if="!WindowService.portrait()">
+            <div class="row home-low" ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
+              <h2 class="home-title landscape">Les chiffres clés de la structure</h2>
+            </div>
+            <div class="row home-button landscape">
+              <div class="col col-50 col-center">
+                <button ui-sref="app.devco" class="button button-block etic-green">
+                  Développement commercial
+                </button>
+              </div>
+              <div class="col col-50 col-center">
+                <button ui-sref="app.devinterne" class="button button-block etic-green">
+                  Développement interne
+                </button>
+              </div>
+            </div>
+            <div class="row home-button landscape">
+              <div class="col col-50 col-center">
+                <button ui-sref="app.rh" class="button button-block etic-green">
+                  Ressources humaines
+                </button>
+              </div>
+              <div class="col col-50 col-center">
+                <button ui-sref="app.communication" class="button button-block etic-green">
+                  Communication
+                </button>
+              </div>
+            </div>
+            <div class="row home-button landscape">
+              <div class="col col-50 col-center col-offset-25">
+                <button ui-sref="app.tresorerie" class="button button-block etic-green">
+                  Trésorerie
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </ion-content>
 </ion-view>
