@@ -5,7 +5,7 @@
              ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
           <div class="col col-80 col-offset-10" ng-if="WindowService.portrait()">
             <div class="row">
-              <h2 class="home-title portrait">Les chiffres clés d'ETIC</h2>
+              <h2 class="home-title portrait">Les chiffres clés de la structure</h2>
             </div>
             <div class="row home-button portrait">
               <button ui-sref="app.devco" class="button button-block etic-green">
@@ -43,7 +43,7 @@
                   Développement commercial
                 </button>
               </div>
-              <div class="col col-50 col-center" style="margin-top: 25px">
+              <div class="col col-50 col-center">
                 <button ui-sref="app.devinterne" class="button button-block etic-green">
                   Développement interne
                 </button>
@@ -61,7 +61,7 @@
                 </button>
               </div>
             </div>
-            <div class="row home-button landscape">
+            <div class="row home-button landscape" style="margin-top: 25px">
               <div class="col col-50 col-center col-offset-25">
                 <button ui-sref="app.tresorerie" class="button button-block etic-green">
                   Trésorerie
