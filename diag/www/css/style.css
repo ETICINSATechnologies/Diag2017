@@ -304,6 +304,10 @@ ion-content > div {
   max-width: 70%;
 }
 
+.item-content.activated {
+  background-color: #c3c3c3 !important;
+}
+
 /** HOME **/
 
 .home-title {
@@ -336,6 +340,10 @@ ion-content > div {
 
 .home-low h2 {
   font-size: 200%;
+}
+
+.home-button button.activated {
+  background-color: #9aceac !important;
 }
 
 /** HOME PORTRAIT **/
