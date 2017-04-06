@@ -8,18 +8,18 @@
       <div class="col project-container"
            ui-sref="app.project({x : $index, y: 0})"
            ng-class="{'col-40 col-offset-8':WindowService.portrait(), 'col-33 col-offset-12': WindowService.landscape()}">
-        <img ng-src="img/projects/{{project[0].picture}}" class="project-img"/>
         <div class="project-overlay"
              ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}"><span>{{project[0].name}}</span>
         </div>
+        <img ng-src="img/projects/{{project[0].picture}}" class="project-img"/>
       </div>
       <div ng-if="project[1]" class="col project-container"
            ui-sref="app.project({x : $index, y: 1})"
            ng-class="{'col-40 col-offset-4':WindowService.portrait(), 'col-33 col-offset-10': WindowService.landscape()}">
-        <img ng-src="img/projects/{{project[1].picture}}" class="project-img"/>
         <div class="project-overlay"
              ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}"><span>{{project[1].name}}</span>
         </div>
+        <img ng-src="img/projects/{{project[1].picture}}" class="project-img"/>
       </div>
     </div>
   </ion-content>

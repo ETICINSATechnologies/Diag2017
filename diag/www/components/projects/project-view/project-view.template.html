@@ -230,6 +230,7 @@
           </h4>
         </div>
         <div class="row" ng-repeat-end>
+          <img ng-src="img/projects/{{manager.picture}}" class="rounded-picture">
           <div class="project-view-bubble portrait">
             {{manager.feedback}}
           </div>
@@ -243,6 +244,7 @@
           <div class="project-view-bubble etic-green portrait">
             {{client.feedback}}
           </div>
+          <img ng-src="img/projects/{{client.picture}}" class="rounded-picture">
         </div>
         <div class="row" ng-repeat-start="consultant in project.consultants">
           <h4 class="project-view-sub-title">
@@ -250,6 +252,7 @@
           </h4>
         </div>
         <div class="row" ng-repeat-end>
+          <img ng-src="img/projects/{{consultant.picture}}" class="rounded-picture">
           <div class="project-view-bubble portrait">
             {{consultant.feedback}}
           </div>
