@@ -358,14 +358,15 @@ ion-content > div {
 }
 
 .portrait.home-button {
-  margin-top: 4% !important;
-  margin-bottom: 4% !important;
+  margin-top: 0 !important;
+  margin-bottom: 11% !important;
   max-height: 30% !important;
   min-height: 20% !important;
   height: 8vw !important;
 }
 
 .portrait.home-button > button {
+  padding: 2% 5% 11% 5%;
   height: 80% !important;
   font-size: 4vw;
   font-family: caviarDreams, Arial;
