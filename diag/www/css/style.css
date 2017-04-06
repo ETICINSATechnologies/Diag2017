@@ -541,7 +541,7 @@ ion-content > div {
 }
 
 .project-view-bubble {
-  border-radius: 40px 40px;
+  border-radius: 20px 20px;
   background-color: #FFFFFF;
   color: #000000;
   display: inline-block;
