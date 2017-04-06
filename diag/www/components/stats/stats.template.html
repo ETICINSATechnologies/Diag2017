@@ -5,7 +5,7 @@
              ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">
           <div class="col col-80 col-offset-10" ng-if="WindowService.portrait()">
             <div class="row">
-              <h2 class="project-title portrait">Nos indicateurs</h2>
+              <h2 class="project-title portrait" ng-class="{portrait: WindowService.portrait(), landscape: WindowService.landscape()}">Nos indicateurs</h2>
             </div>
             <div class="row home-button portrait">
               <button ui-sref="app.devco" class="button button-block etic-green">
