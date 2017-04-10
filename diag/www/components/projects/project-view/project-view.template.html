@@ -21,7 +21,7 @@
         <div class="row">
           <div class="col col-50 project-number" ng-class="{portrait: WindowService.portrait()}">
             <span class="ion-android-people project-view-icon"></span>
-            <h4 class="project-view-sub-title">{{project.consultantsAmount}} Consultants</h4>
+            <h4 class="project-view-sub-title">{{project.consultantsAmount}} Consultant{{project.consultantsAmount > 1 ? 's' : ''}}</h4>
           </div>
           <div class="col col-50 project-number" ng-class="{portrait: WindowService.portrait()}">
             <span class="ion-android-calendar project-view-icon"></span>
