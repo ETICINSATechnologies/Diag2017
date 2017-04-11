@@ -583,7 +583,7 @@ ion-content > div {
   margin-right: 2vw;
   margin-left: 2vw;
   display: inline-block;
-  background-color: #FFFFFF;
+  background-color: transparent;
   border-radius: 50% 50%;
 }
 
